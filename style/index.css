@@ -1,0 +1,244 @@
+*{
+    /* border-collapse: collapse;
+      border: 3px rgb(255, 0, 0, 0.7) solid;
+      background-color: rgb(0, 255, 0, 0.3); */
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin : 0;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding: 1%;
+}
+
+.width-30{
+    width: 35%;
+}
+
+.btn{
+    display:inline-block;
+    background-color: red;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin:2em 0;
+}
+
+.btn i{
+    margin-right:0.2em;
+}
+
+.btn-lg{
+    font-size:1.5em;
+    padding:0.8em 2em 0.8em 0.7em;
+    border-radius: 0.5em;
+}
+
+.btn-md{
+    font-size:1.2em;
+    padding:0.8em 2em 0.8em 0.7em;
+    border-radius: 0.5em;
+}
+
+/* Header Section */
+
+header{
+    padding:2rem 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color:black;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-section{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+form{
+    display: inline-block;
+}
+
+input[name="search"]{
+    font-size: 1rem;
+    padding:0.5em 25px 0.5em 0.5em;
+    border-radius: 0.3em;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+    background-size: 20px;
+    width: 8em;
+}
+
+.notification-img{
+    font-size: 2rem;
+    margin: 0 4%;
+}
+
+.profile-img{
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    border-radius:50%;
+    border:1px solid black;
+}
+
+/* Main Section */
+
+.main-card{
+    padding:4%;
+    border:1px solid black;
+}
+
+.info-section{
+    display:flex;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.rating-section{
+    color:red;
+}
+
+.audience-section{
+    border:1px solid black;
+    border-radius: 0.2em;
+    padding:0.2em;
+}
+
+.imdb-rating span{
+    font-weight: 500;
+}
+
+.description{
+    margin:2em 0;
+}
+
+.details-section{
+    font-weight: 500;
+}
+
+.details-section p{
+    line-height: 0.5;
+}
+
+.details-section span{
+    color:red;
+}
+
+
+/* Modular Section */
+.heading-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.heading-container h2, .heading-container p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 25%;
+    padding: 1% 2%;
+    border: 1px solid black;
+}
+
+.movie-card h3{
+    margin: 15% 0 5% 0;
+}
+
+.content-container h3{
+    font-size: 1.5rem;
+}
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-navigation-container{
+    width: 50%;
+}
+
+footer nav{
+    display: flex;
+    column-gap:2em;
+}
+
+footer nav a{
+    text-decoration: none;
+    color:black;
+}
+
+footer h4{
+    margin: 0 0 0.8em 0;
+}
+
+.footer-followus-container img, .footer-apps-container img{
+    height: 3rem;
+}
+
+@media screen and (max-width:900px){
+    footer{
+        display: block;
+    }
+
+    .footer-navigation-container{
+        width: 100%;
+    }
+
+    .footer-followus-container, .footer-apps-container{
+        display: inline-block;
+    }
+
+    .footer-apps-container{
+        margin-left: 5%;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    header nav{
+        order:1;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    header nav a{
+        margin: 0 1rem;
+    }
+}
+
+@media secreen and (max-width:600px){
+    .popular-section, .recommended-section{
+        font-size: 0.5rem;
+    }
+}
